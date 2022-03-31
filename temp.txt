@@ -1,0 +1,5 @@
+0 vide 70%
+25 preseque vide 30%
+50 milieu 0%
+75 presque plein -30%
+100 pleine -75%

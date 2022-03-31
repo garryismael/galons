@@ -1,3 +1,7 @@
+.button {
+    background-color: #4973ff;
+}
+
 .shape {
     width: 200px;
     height: 250px;
@@ -26,25 +30,11 @@
     height: 200%;
     transform: translate(-25%, 0);
     background: #4973ff;
-    animation: fill-up 10s ease infinite;
 }
-
-.button {
-    background-color: #4973ff;
-}
-
-
-/*
-100%: -75%
-75%: -30%
-50%: 0%
-25%: 30%
-0%: 70%;
-*/
 
 @keyframes fill-up {
     to {
-        top: 80%;
+        top: -75%;
     }
 }
 
@@ -78,5 +68,327 @@
     }
     100% {
         transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+.pleine {
+    animation: pleine 10s ease infinite alternate !important;
+}
+
+@keyframes pleine {
+    from {
+        top: 70%;
+    }
+    to {
+        top: -75%
+    }
+}
+
+.pleine-75 {
+    animation: pleine-75 10s ease infinite alternate !important;
+}
+
+@keyframes pleine-75 {
+    from {
+        top: -75%;
+    }
+    to {
+        top: -30%;
+    }
+}
+
+.pleine-50 {
+    animation: pleine-50 10s ease infinite alternate !important;
+}
+
+@keyframes pleine-50 {
+    from {
+        top: -75%;
+    }
+    to {
+        top: 0%;
+    }
+}
+
+.pleine-25 {
+    animation: pleine-25 10s ease infinite alternate !important;
+}
+
+@keyframes pleine-25 {
+    from {
+        top: -75%;
+    }
+    to {
+        top: 30%;
+    }
+}
+
+.pleine-0 {
+    animation: pleine-0 10s ease infinite alternate !important;
+}
+
+@keyframes pleine-0 {
+    from {
+        top: -75%;
+    }
+    to {
+        top: 70%;
+    }
+}
+
+.vide {
+    animation: vide 10s ease infinite alternate !important;
+}
+
+@keyframes vide {
+    to {
+        top: 70%
+    }
+}
+
+.vide-25 {
+    animation: vide-25 10s ease infinite alternate !important;
+}
+
+@keyframes vide-25 {
+    from {
+        top: 70%
+    }
+    to {
+        top: 30%;
+    }
+}
+
+.vide-50 {
+    animation: vide-50 10s ease infinite alternate !important;
+}
+
+@keyframes vide-50 {
+    from {
+        top: 70%
+    }
+    to {
+        top: 0%;
+    }
+}
+
+.vide-75 {
+    animation: vide-75 10s ease infinite alternate !important;
+}
+
+@keyframes vide-75 {
+    from {
+        top: 70%
+    }
+    to {
+        top: -30%;
+    }
+}
+
+.vide-100 {
+    animation: vide-100 10s ease infinite alternate !important;
+}
+
+@keyframes vide-100 {
+    from {
+        top: 70%
+    }
+    to {
+        top: -75%;
+    }
+}
+
+.presque-vide {
+    animation: presque-vide 10s ease infinite alternate !important;
+}
+
+@keyframes presque-vide {
+    from {
+        top: 70%
+    }
+    to {
+        top: 30%
+    }
+}
+
+.presque-vide-0 {
+    animation: presque-vide-0 10s ease infinite alternate !important;
+}
+
+@keyframes presque-vide-0 {
+    from {
+        top: 30%
+    }
+    to {
+        top: 70%
+    }
+}
+
+.presque-vide-50 {
+    animation: presque-vide-50 10s ease infinite alternate !important;
+}
+
+@keyframes presque-vide-50 {
+    from {
+        top: 30%
+    }
+    to {
+        top: 0%
+    }
+}
+
+.presque-vide-75 {
+    animation: presque-vide-75 10s ease infinite alternate !important;
+}
+
+@keyframes presque-vide-75 {
+    from {
+        top: 30%
+    }
+    to {
+        top: -30%
+    }
+}
+
+.presque-vide-100 {
+    animation: presque-vide-100 10s ease infinite alternate !important;
+}
+
+@keyframes presque-vide-100 {
+    from {
+        top: 30%
+    }
+    to {
+        top: -75%
+    }
+}
+
+.presque-pleine {
+    animation: presque-pleine 10s ease infinite alternate !important;
+}
+
+@keyframes presque-pleine {
+    from {
+        top: 70%;
+    }
+    to {
+        top: -30%
+    }
+}
+
+.presque-pleine-50 {
+    animation: presque-pleine-50 10s ease infinite alternate !important;
+}
+
+@keyframes presque-pleine-50 {
+    from {
+        top: -30%;
+    }
+    to {
+        top: 0%
+    }
+}
+
+.presque-pleine-25 {
+    animation: presque-pleine-25 10s ease infinite alternate !important;
+}
+
+@keyframes presque-pleine-25 {
+    from {
+        top: -30%;
+    }
+    to {
+        top: 30%
+    }
+}
+
+.presque-pleine-0 {
+    animation: presque-pleine-0 10s ease infinite alternate !important;
+}
+
+@keyframes presque-pleine-0 {
+    from {
+        top: -30%;
+    }
+    to {
+        top: 70%
+    }
+}
+
+.presque-pleine-100 {
+    animation: presque-pleine-100 10s ease infinite alternate !important;
+}
+
+@keyframes presque-pleine-100 {
+    from {
+        top: -30%;
+    }
+    to {
+        top: -75%
+    }
+}
+
+.milieu {
+    animation: milieu 10s ease infinite alternate !important;
+}
+
+@keyframes milieu {
+    from {
+        top: 70%;
+    }
+    to {
+        top: 0%
+    }
+}
+
+.milieu-0 {
+    animation: milieu-0 10s ease infinite alternate !important;
+}
+
+@keyframes milieu-0 {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 70%
+    }
+}
+
+.milieu-25 {
+    animation: milieu-25 10s ease infinite alternate !important;
+}
+
+@keyframes milieu-25 {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 30%
+    }
+}
+
+.milieu-75 {
+    animation: milieu-75 10s ease infinite alternate !important;
+}
+
+@keyframes milieu-75 {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -30%
+    }
+}
+
+.milieu-100 {
+    animation: milieu-100 10s ease infinite alternate !important;
+}
+
+@keyframes milieu-100 {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -75%
     }
 }
