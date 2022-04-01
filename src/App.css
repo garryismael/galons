@@ -77,10 +77,10 @@
 
 @keyframes pleine {
     from {
-        top: 70%;
+        margin-top: 70%;
     }
     to {
-        top: -75%
+        margin-top: -75%
     }
 }
 
@@ -216,10 +216,13 @@
 }
 
 @keyframes presque-vide-0 {
-    from {
+    0% {
         top: 30%
     }
-    to {
+    50% {
+        top: 50%;
+    }
+    100% {
         top: 70%
     }
 }
@@ -387,6 +390,71 @@
 @keyframes milieu-100 {
     from {
         top: 0%;
+    }
+    to {
+        top: -75%
+    }
+}
+
+.rester-0 {
+    animation: rester-0 10s ease infinite alternate !important;
+}
+
+@keyframes rester-0 {
+    from {
+        top: 70%;
+    }
+    to {
+        top: 70%
+    }
+}
+
+.rester-25 {
+    animation: rester-25 10s ease infinite alternate !important;
+}
+
+@keyframes rester-25 {
+    from {
+        top: 30%;
+    }
+    to {
+        top: 30%
+    }
+}
+
+.rester-50 {
+    animation: rester-50 10s ease infinite alternate !important;
+}
+
+@keyframes rester-50 {
+    from {
+        top: 0%;
+    }
+    to {
+        top: 0%
+    }
+}
+
+.rester-75 {
+    animation: rester-75 10s ease infinite alternate !important;
+}
+
+@keyframes rester-75 {
+    from {
+        top: -30%;
+    }
+    to {
+        top: -30%
+    }
+}
+
+.rester-100 {
+    animation: rester-100 10s ease infinite alternate !important;
+}
+
+@keyframes rester-100 {
+    from {
+        top: -75%;
     }
     to {
         top: -75%

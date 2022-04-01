@@ -34,11 +34,10 @@ const App = () => {
       } else {
         for (let i = 0; i < noeuds.length; i++) {
           setTimeout(() => {
-            console.log(noeuds[i].x);
-            console.log(noeuds[i].y);
             setGalons(x, y, noeuds, i);
-            if (i === noeuds.length - 1) {
-              setOnLoad(false);
+            if (i < noeuds.length) {
+              setGalonX(noeuds[i + 1].x);
+              setGalonY(noeuds[i + 1].y);
             }
           }, 10000 * i);
         }
@@ -54,9 +53,13 @@ const App = () => {
       const styleY = cssStyle(noeud_y, noeuds[i + 1].y, y);
       setCssX(styleX);
       setCssY(styleY);
+    } else {
+      setOnLoad(false);
+      setTimeout(() => {
+        setCssX(cssStyle(noeud_x, noeud_x, x));
+        setCssY(cssStyle(noeud_y, noeud_y, y));
+      }, 5000);
     }
-    setGalonX(noeud_x);
-    setGalonY(noeud_y);
   };
   return (
     <div className='items-center max-w-2xl p-6 mx-auto mt-48 bg-white shadow-lg rounded-xl'>

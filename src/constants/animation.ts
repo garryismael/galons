@@ -23,7 +23,11 @@ export const VIDE_25: string = 'vide-25';
 export const VIDE_50: string = 'vide-50';
 export const VIDE_75: string = 'vide-75';
 export const VIDE_100: string = 'vide-100';
-
+export const RESTER_0: string = 'rester-0';
+export const RESTER_25: string = 'rester-25';
+export const RESTER_50: string = 'rester-50';
+export const RESTER_75: string = 'rester-75';
+export const RESTER_100: string = 'rester-100';
 export interface IGalonXY {
   vide: string;
   presqueVide: string;
@@ -47,6 +51,7 @@ export const PLEINE: IGalonXY = {
   presquePleine: PLEINE_75,
   pleine: PLEINE_100,
 };
+
 export const PRESQUE_PLEINE: IGalonXY = {
   vide: PRESQUE_PLEINE_0,
   presqueVide: PRESQUE_PLEINE_25,
