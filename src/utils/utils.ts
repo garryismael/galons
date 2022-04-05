@@ -20,24 +20,30 @@ const cssStyle = (noeudActuel: number, noeudSuivant: number, max: number) => {
     } else if (noeudActuel === max) {
       return valeurCssStyle(noeudSuivant, max, PLEINE);
     } else if (noeudActuel < milieux) {
-      return valeurCssStyle(noeudSuivant, max, PRESQUE_VIDE);
+      if (noeudSuivant < milieux) return cssStagne(noeudSuivant, max, milieux);
+      else return valeurCssStyle(noeudSuivant, max, PRESQUE_VIDE);
     } else if (noeudActuel === milieux) {
       return valeurCssStyle(noeudSuivant, max, MILIEU);
     } else {
-      return valeurCssStyle(noeudSuivant, max, PRESQUE_PLEINE);
+      if (noeudSuivant < max) return cssStagne(noeudSuivant, max, milieux);
+      else return valeurCssStyle(noeudSuivant, max, PRESQUE_PLEINE);
     }
   } else {
-    if (noeudActuel === 0) {
-      return RESTER_0;
-    } else if (noeudActuel === max) {
-      return RESTER_100;
-    } else if (noeudActuel < milieux) {
-      return RESTER_25;
-    } else if (noeudActuel === milieux) {
-      return RESTER_50;
-    } else {
-      return RESTER_75;
-    }
+    return cssStagne(noeudActuel, max, milieux);
+  }
+};
+
+const cssStagne = (noeudActuel: number, max: number, milieux: number) => {
+  if (noeudActuel === 0) {
+    return RESTER_0;
+  } else if (noeudActuel === max) {
+    return RESTER_100;
+  } else if (noeudActuel < milieux) {
+    return RESTER_25;
+  } else if (noeudActuel === milieux) {
+    return RESTER_50;
+  } else {
+    return RESTER_75;
   }
 };
 

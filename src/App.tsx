@@ -35,7 +35,7 @@ const App = () => {
         for (let i = 0; i < noeuds.length; i++) {
           setTimeout(() => {
             setGalons(x, y, noeuds, i);
-            if (i < noeuds.length) {
+            if (i + 1 < noeuds.length) {
               setGalonX(noeuds[i + 1].x);
               setGalonY(noeuds[i + 1].y);
             }
