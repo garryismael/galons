@@ -5,7 +5,7 @@ export interface Carafe {
   y: number;
 }
 
-const URL = 'http://127.0.0.1:8000';
+const URL = 'https://carafe.deta.dev';
 
 async function service(x: number, y: number, but: number): Promise<Array<Carafe>> {
   const resp = await axios.get(`${URL}/${x}/${y}/${but}`);
